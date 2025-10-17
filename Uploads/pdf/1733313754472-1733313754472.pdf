@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <script type="text/javascript">if (parent.frames.length !== 0) {
+            top.location = 'https://aryanuk.com/sma/pos';
+        }</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://aryanuk.com/sma/themes/default/assets/images/icon.png"/>
+    <link href="https://aryanuk.com/sma/themes/default/assets/styles/theme.css" rel="stylesheet"/>
+    <link href="https://aryanuk.com/sma/themes/default/assets/styles/style.css" rel="stylesheet"/>
+    <link href="https://aryanuk.com/sma/themes/default/assets/styles/helpers/login.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://aryanuk.com/sma/themes/default/assets/js/jquery-2.0.3.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://aryanuk.com/sma/themes/default/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="login-page">
+<noscript>
+    <div class="global-site-notice noscript">
+        <div class="notice-inner">
+            <p><strong>JavaScript seems to be disabled in your browser.</strong><br>You must have JavaScript enabled in
+                your browser to utilize the functionality of this website.</p>
+        </div>
+    </div>
+</noscript>
+<div class="page-back">
+    <div class="text-center"><img src="https://aryanuk.com/sma/assets/uploads/logos/logo-sma.png" alt="ARYAN HERBALS LTD" style="margin-bottom:10px;" /></div>
+    <div id="login">
+
+        <div class=" container">
+
+            <div class="login-form-div">
+                <div class="login-content">
+                                                            
+					<form action="https://aryanuk.com/sma/auth/login" method="get">
+                    <div class="div-title">
+                        <h3 class="text-primary">Please login to your account.</h3>
+                    </div>
+                    <div class="textbox-wrap form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" required="required" class="form-control" name="identity"
+                                   placeholder="Username"/>
+                        </div>
+                    </div>
+                    <div class="textbox-wrap form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                            <input type="password" required="required" class="form-control " name="password"
+                                   placeholder="Password"/>
+                        </div>
+                    </div>
+                    
+                    <div class="form-action clearfix">
+                        <div class="checkbox pull-left">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" name="remember" value="1"  id="remember" />
+                            </div>
+                            <span class="checkbox-text pull-left"><label
+                                    for="remember">Remember me</label></span>
+                        </div>
+                        <button type="submit" class="btn btn-success pull-right">Login &nbsp; <i
+                                class="fa fa-sign-in"></i></button>
+                    </div>
+					</form>
+                </div>
+                <div class="login-form-links link2">
+                    <h4 class="text-danger">Forgot your password?</h4>
+                    <span>Don't worry!</span>
+                    <a href="#forgot_password" class="text-danger forgot_password_link">click here</a>
+                    <span>to reset</span>
+                </div>
+                            </div>
+
+        </div>
+    </div>
+
+    <div id="forgot_password" style="display: none;">
+        <div class=" container">
+
+            <div class="login-form-div">
+                <div class="login-content">
+                                        <div class="div-title">
+                        <h3 class="text-primary">Forgot Password</h3>
+                    </div>
+                    <form action="https://aryanuk.com/sma/auth/forgot_password" class="login" data-toggle="validator" method="post" accept-charset="utf-8">
+                    <div class="textbox-wrap form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon "><i class="fa fa-envelope"></i></span>
+                            <input type="email" name="forgot_email" class="form-control "
+                                   placeholder="Email Address" required="required"/>
+                        </div>
+                    </div>
+                    <div class="form-action clearfix">
+                        <a class="btn btn-success pull-left login_link" href="#login"><i
+                                class="fa fa-chevron-left"></i> Back  </a>
+                        <button type="submit" class="btn btn-primary pull-right">Submit &nbsp;&nbsp; <i
+                                class="fa fa-envelope"></i></button>
+                    </div>
+                    </form>                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+<script src="https://aryanuk.com/sma/themes/default/assets/js/jquery.js"></script>
+<script src="https://aryanuk.com/sma/themes/default/assets/js/bootstrap.min.js"></script>
+<script src="https://aryanuk.com/sma/themes/default/assets/js/jquery.cookie.js"></script>
+<script src="https://aryanuk.com/sma/themes/default/assets/js/login.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var hash = window.location.hash;
+        if (hash && hash != '') {
+            $("#login").hide();
+            $(hash).show();
+        }
+    });
+</script>
+</body>
+</html>
